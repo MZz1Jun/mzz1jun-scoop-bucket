@@ -16,7 +16,7 @@
         ]
     ],
     "persist": "portable",
-    "checkver": "github",
+    "checkver": "https://github.com/lyswhut/lx-music-desktop",
     "autoupdate": {
         "architecture": {
             "64bit": {

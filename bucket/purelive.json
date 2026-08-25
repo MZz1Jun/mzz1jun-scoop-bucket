@@ -19,11 +19,14 @@
             "PureLive"
         ]
     ],
-    "checkver": "https://github.com/liuchuancong/pure_live/releases",
+    "checkver": {
+        "url": "https://api.github.com/repos/liuchuancong/pure_live/releases/latest",
+        "regex": "PureLive-(?<version>[\\d.]+)-(?<build>[\\d]+)-windows-x64-setup\\.exe"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/liuchuancong/pure_live/releases/download/v$version/PureLive-$version-windows-x64-setup.exe"
+                "url": "https://github.com/liuchuancong/pure_live/releases/download/v$version/PureLive-$version-$matchBuild-windows-x64-setup.exe"
             }
         }
     }

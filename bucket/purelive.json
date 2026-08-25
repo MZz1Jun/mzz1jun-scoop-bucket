@@ -19,6 +19,9 @@
             "PureLive"
         ]
     ],
+    "persist": [
+        "AppData"
+    ],
     "checkver": {
         "url": "https://api.github.com/repos/liuchuancong/pure_live/releases/latest",
         "regex": "PureLive-(?<version>[\\d.]+)-(?<build>[\\d]+)-windows-x64-setup\\.exe"
